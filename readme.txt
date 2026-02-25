@@ -1,3 +1,4 @@
+------------------------------------ SIT Mini-project ------------------------------------------ 
 To test the testcase generation:
 
 run these series of command:
