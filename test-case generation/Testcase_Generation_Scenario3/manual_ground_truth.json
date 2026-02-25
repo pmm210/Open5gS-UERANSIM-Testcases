@@ -1,0 +1,64 @@
+{
+    "scenario": "Scenario 3: Fake SMF Access to UPF",
+    "description": "Manual Ground Truth extracted from Wireshark Frames 43 and 75",
+    "execution_flow": [
+        {
+            "step": 1,
+            "name": "Establish Fake SMF Association",
+            "packet_type": "PFCP Association Setup Request",
+            "transport_layer": {
+                "src_ip": "192.168.37.131",
+                "dst_ip": "192.168.37.143",
+                "protocol": "UDP",
+                "port": 8805
+            },
+            "pfcp_header": {
+                "version": 1,
+                "type": 5,
+                "seq_num": 0,
+                "s_field": 0
+            },
+            "payload_ies": {
+                "node_id": {
+                    "type": "IPv4",
+                    "value": "192.168.37.131"
+                },
+                "recovery_timestamp": "Dec 25, 2091 17:46:29.000000000 UTC"
+            }
+        },
+        {
+            "step": 2,
+            "name": "Inject Malicious Drop Rule",
+            "packet_type": "PFCP Session Modification Request",
+            "transport_layer": {
+                "src_ip": "192.168.37.131",
+                "dst_ip": "192.168.37.143",
+                "protocol": "UDP",
+                "port": 8805
+            },
+            "pfcp_header": {
+                "type": 52,
+                "seid": 2508,
+                "seq_num": 3
+            },
+            "payload_ies": {
+                "far": {
+                    "id": 100,
+                    "apply_action": "DROP"
+                },
+                "pdr": {
+                    "id": 100,
+                    "precedence": 1,
+                    "pdi": {
+                        "source_interface": "Access",
+                        "fteid": {
+                            "teid": 61033,
+                            "ipv4": "192.168.37.143"
+                        },
+                        "ue_ip": "10.45.0.9"
+                    }
+                }
+            }
+        }
+    ]
+}

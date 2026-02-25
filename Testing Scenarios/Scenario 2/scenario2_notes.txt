@@ -1,0 +1,64 @@
+Scenario 2 Demo quick guide
+
+
+Setup requirements
+
+- Open5GS, UERANSIM, and Attacker VM
+- Ensure all can ping each other
+- Ensure attacker VM in promiscuous mode
+
+Step 1: prepare the attacker VM 
+
+- install dependencies
+pip3 install scapy pycrate
+
+#if pycrate not found, install from their github
+
+- enable promiscuous mode
+sudo ip link set <interface> promisc on
+
+
+Step 2: Configure and start the Open5GS
+
+- to run the AMF
+sudo systemctl start open5gs-amfd
+sudo systemctl status open5gs-amfd (to verify)
+
+- to configure the AMF
+Follow the Setting up guide on Open5GS and UERASIM.docx
+
+Step 3: Configure UERANSIM
+
+- to configure the GNodeB
+Follow the Setting up guide on Open5GS and UERASIM.docx
+
+Step 4: Block legitimate AMF response in Open5GS machine
+
+# Since AMF will response faster than the attacker machine, to simulate the attack, we have to configure block AMF's NGSetupResponse from reaching to GNodeB
+- Block NGSetupResponse from actual AMF
+sudo iptables -I FORWARD -s <AMF_IP> -p sctp --dport 38412 -j DROP
+sudo iptables -L FORWARD -n | grep sctp (to verify)
+
+Step 5: Start the attacker script
+
+- Run attacker script
+# AMF-name, Region ID, SetiD can be configured to ur own values
+sudo python3 scenario2_demo.py \
+    --live \
+    --iface eth0 \
+    --amf-name "FakeAMF" \
+    --region 01 \
+    --setid 0001 \
+    --pointer 00 \
+    --mcc 001 \
+    --mnc 01 \
+    --sst 01 \
+    --block-sack-ms 120
+
+Step 6: Initial SCTP connection from GnodeB
+
+- start SCTP connection from gNodeB
+cd UERANSIM
+./build/nr-gnb -c config/open5gs-gnb.yaml
+
+Step 7: Monitor from wireshark

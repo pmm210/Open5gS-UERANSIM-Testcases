@@ -1,0 +1,413 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       192.168.1.23          192.168.1.23          SCTP     82     INIT 
+
+Frame 1: Packet, 82 bytes on wire (656 bits), 82 bytes captured (656 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 15, 2025 19:36:13.229127000 Malay Peninsula Standard Time
+    UTC Arrival Time: Oct 15, 2025 11:36:13.229127000 UTC
+    Epoch Arrival Time: 1760528173.229127000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 82 bytes (656 bits)
+    Capture Length: 82 bytes (656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:sctp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.1.23, Dst: 192.168.1.23
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 68
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: SCTP (132)
+    Header Checksum: 0xb6b5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.23
+    Destination Address: 192.168.1.23
+    [Stream index: 0]
+Stream Control Transmission Protocol, Src Port: 44502 (44502), Dst Port: 38412 (38412)
+    Source port: 44502
+    Destination port: 38412
+    Verification tag: 0x00000000
+    [Association index: disabled (enable in preferences)]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    INIT chunk (Outbound streams: 10, inbound streams: 10)
+        Chunk type: INIT (1)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x00
+        Chunk length: 36
+        Initiate tag: 0xf1328b05
+        Advertised receiver window credit (a_rwnd): 106496
+        Number of outbound streams: 10
+        Number of inbound streams: 10
+        Initial TSN: 1586310925
+        Supported address types parameter (Supported types: IPv4)
+            Parameter type: Supported address types (0x000c)
+                0... .... .... .... = Bit: Stop processing of chunk
+                .0.. .... .... .... = Bit: Do not report
+            Parameter length: 6
+            Supported address type: IPv4 address (5)
+            Parameter padding: 0000
+        ECN parameter
+            Parameter type: ECN (0x8000)
+                1... .... .... .... = Bit: Skip parameter and continue processing of the chunk
+                .0.. .... .... .... = Bit: Do not report
+            Parameter length: 4
+        Forward TSN supported parameter
+            Parameter type: Forward TSN supported (0xc000)
+                1... .... .... .... = Bit: Skip parameter and continue processing of the chunk
+                .1.. .... .... .... = Bit: Do report
+            Parameter length: 4
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000044       192.168.1.23          192.168.1.23          SCTP     306    INIT_ACK 
+
+Frame 2: Packet, 306 bytes on wire (2448 bits), 306 bytes captured (2448 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 15, 2025 19:36:13.229171000 Malay Peninsula Standard Time
+    UTC Arrival Time: Oct 15, 2025 11:36:13.229171000 UTC
+    Epoch Arrival Time: 1760528173.229171000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 44.000 microseconds]
+    [Time delta from previous displayed frame: 44.000 microseconds]
+    [Time since reference or first frame: 44.000 microseconds]
+    Frame Number: 2
+    Frame Length: 306 bytes (2448 bits)
+    Capture Length: 306 bytes (2448 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:sctp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.1.23, Dst: 192.168.1.23
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 292
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: SCTP (132)
+    Header Checksum: 0xb5d5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.23
+    Destination Address: 192.168.1.23
+    [Stream index: 0]
+Stream Control Transmission Protocol, Src Port: 38412 (38412), Dst Port: 44502 (44502)
+    Source port: 38412
+    Destination port: 44502
+    Verification tag: 0xf1328b05
+    [Association index: disabled (enable in preferences)]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    INIT_ACK chunk (Outbound streams: 10, inbound streams: 10)
+        Chunk type: INIT_ACK (2)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x00
+        Chunk length: 260
+        Initiate tag: 0x53257500
+        Advertised receiver window credit (a_rwnd): 106496
+        Number of outbound streams: 10
+        Number of inbound streams: 10
+        Initial TSN: 3732213502
+        State cookie parameter (Cookie length: 228 bytes)
+            Parameter type: State cookie (0x0007)
+                0... .... .... .... = Bit: Stop processing of chunk
+                .0.. .... .... .... = Bit: Do not report
+            Parameter length: 232
+            State cookie […]: 5cd55d7d85c3a070438bb1215e71bb8fb1aa19e20000000000000000000000000000000000752553058b32f100000000000000007689abb619a76e180a000a00fe0e75de0200add6c0a8011700000000000000000000000000000000000000000c9601000000000080020024cb5
+        ECN parameter
+            Parameter type: ECN (0x8000)
+                1... .... .... .... = Bit: Skip parameter and continue processing of the chunk
+                .0.. .... .... .... = Bit: Do not report
+            Parameter length: 4
+        Forward TSN supported parameter
+            Parameter type: Forward TSN supported (0xc000)
+                1... .... .... .... = Bit: Skip parameter and continue processing of the chunk
+                .1.. .... .... .... = Bit: Do report
+            Parameter length: 4
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000065       192.168.1.23          192.168.1.23          SCTP     278    COOKIE_ECHO 
+
+Frame 3: Packet, 278 bytes on wire (2224 bits), 278 bytes captured (2224 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 15, 2025 19:36:13.229192000 Malay Peninsula Standard Time
+    UTC Arrival Time: Oct 15, 2025 11:36:13.229192000 UTC
+    Epoch Arrival Time: 1760528173.229192000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 21.000 microseconds]
+    [Time delta from previous displayed frame: 21.000 microseconds]
+    [Time since reference or first frame: 65.000 microseconds]
+    Frame Number: 3
+    Frame Length: 278 bytes (2224 bits)
+    Capture Length: 278 bytes (2224 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:sctp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.1.23, Dst: 192.168.1.23
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 264
+    Identification: 0x0001 (1)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: SCTP (132)
+    Header Checksum: 0xb5f0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.23
+    Destination Address: 192.168.1.23
+    [Stream index: 0]
+Stream Control Transmission Protocol, Src Port: 44502 (44502), Dst Port: 38412 (38412)
+    Source port: 44502
+    Destination port: 38412
+    Verification tag: 0x53257500
+    [Association index: disabled (enable in preferences)]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    COOKIE_ECHO chunk (Cookie length: 228 bytes)
+        Chunk type: COOKIE_ECHO (10)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x00
+        Chunk length: 232
+        Cookie […]: 5cd55d7d85c3a070438bb1215e71bb8fb1aa19e20000000000000000000000000000000000752553058b32f100000000000000007689abb619a76e180a000a00fe0e75de0200add6c0a8011700000000000000000000000000000000000000000c9601000000000080020024cb56f99b9
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000101       192.168.1.23          192.168.1.23          SCTP     50     COOKIE_ACK 
+
+Frame 4: Packet, 50 bytes on wire (400 bits), 50 bytes captured (400 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 15, 2025 19:36:13.229228000 Malay Peninsula Standard Time
+    UTC Arrival Time: Oct 15, 2025 11:36:13.229228000 UTC
+    Epoch Arrival Time: 1760528173.229228000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 36.000 microseconds]
+    [Time delta from previous displayed frame: 36.000 microseconds]
+    [Time since reference or first frame: 101.000 microseconds]
+    Frame Number: 4
+    Frame Length: 50 bytes (400 bits)
+    Capture Length: 50 bytes (400 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:sctp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.1.23, Dst: 192.168.1.23
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 36
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: SCTP (132)
+    Header Checksum: 0xb6d5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.23
+    Destination Address: 192.168.1.23
+    [Stream index: 0]
+Stream Control Transmission Protocol, Src Port: 38412 (38412), Dst Port: 44502 (44502)
+    Source port: 38412
+    Destination port: 44502
+    Verification tag: 0xf1328b05
+    [Association index: disabled (enable in preferences)]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    COOKIE_ACK chunk
+        Chunk type: COOKIE_ACK (11)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x00
+        Chunk length: 4
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.000689       192.168.1.23          192.168.1.23          NGAP     134    NGSetupRequest
+
+Frame 5: Packet, 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 15, 2025 19:36:13.229816000 Malay Peninsula Standard Time
+    UTC Arrival Time: Oct 15, 2025 11:36:13.229816000 UTC
+    Epoch Arrival Time: 1760528173.229816000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 588.000 microseconds]
+    [Time delta from previous displayed frame: 588.000 microseconds]
+    [Time since reference or first frame: 689.000 microseconds]
+    Frame Number: 5
+    Frame Length: 134 bytes (1072 bits)
+    Capture Length: 134 bytes (1072 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:sctp:ngap:ngap]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.1.23, Dst: 192.168.1.23
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 120
+    Identification: 0x0002 (2)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: SCTP (132)
+    Header Checksum: 0xb67f [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.23
+    Destination Address: 192.168.1.23
+    [Stream index: 0]
+Stream Control Transmission Protocol, Src Port: 44502 (44502), Dst Port: 38412 (38412)
+    Source port: 44502
+    Destination port: 38412
+    Verification tag: 0x53257500
+    [Association index: disabled (enable in preferences)]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    DATA chunk (ordered, complete segment, TSN: 0, SID: 0, SSN: 0, PPID: 60, payload length: 69 bytes)
+        Chunk type: DATA (0)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x03
+            .... 0... = I-Bit: Possibly delay SACK
+            .... .0.. = U-Bit: Ordered delivery
+            .... ..1. = B-Bit: First segment
+            .... ...1 = E-Bit: Last segment
+        Chunk length: 85
+        Transmission sequence number (relative): 0
+        Transmission sequence number (absolute): 1586310925
+        Stream identifier: 0x0000
+        Stream sequence number: 0
+        Payload protocol identifier: NGAP (60)
+        Chunk padding: 000000
+NG Application Protocol (NGSetupRequest)
+    NGAP-PDU: initiatingMessage (0)
+        initiatingMessage
+            procedureCode: id-NGSetup (21)
+            criticality: reject (0)
+            value
+                NGSetupRequest
+                    protocolIEs: 4 items
+                        Item 0: id-GlobalRANNodeID
+                            ProtocolIE-Field
+                                id: id-GlobalRANNodeID (27)
+                                criticality: reject (0)
+                                value
+                                    GlobalRANNodeID: globalGNB-ID (0)
+                                        globalGNB-ID
+                                            pLMNIdentity: 99f907
+                                                Mobile Country Code (MCC): Private network (999)
+                                                Mobile Network Code (MNC): Unknown (70)
+                                            gNB-ID: gNB-ID (0)
+                                                gNB-ID: 00000001 [bit length 32, 0000 0000  0000 0000  0000 0000  0000 0001 decimal value 1]
+                        Item 1: id-RANNodeName
+                            ProtocolIE-Field
+                                id: id-RANNodeName (82)
+                                criticality: ignore (1)
+                                value
+                                    RANNodeName: UERANSIM-gnb-999-70-1
+                        Item 2: id-SupportedTAList
+                            ProtocolIE-Field
+                                id: id-SupportedTAList (102)
+                                criticality: reject (0)
+                                value
+                                    SupportedTAList: 1 item
+                                        Item 0
+                                            SupportedTAItem
+                                                tAC: 7 (0x000007)
+                                                broadcastPLMNList: 1 item
+                                                    Item 0
+                                                        BroadcastPLMNItem
+                                                            pLMNIdentity: 99f907
+                                                                Mobile Country Code (MCC): Private network (999)
+                                                                Mobile Network Code (MNC): Unknown (70)
+                                                            tAISliceSupportList: 1 item
+                                                                Item 0
+                                                                    SliceSupportItem
+                                                                        s-NSSAI
+                                                                            sST: 01
+                        Item 3: id-DefaultPagingDRX
+                            ProtocolIE-Field
+                                id: id-DefaultPagingDRX (21)
+                                criticality: ignore (1)
+                                value
+                                    PagingDRX: v128 (2)

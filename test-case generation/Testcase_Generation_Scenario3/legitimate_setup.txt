@@ -1,0 +1,1072 @@
+No.     Time           Source                Destination           Protocol Length Info
+    101 20.494405487   192.168.37.140        192.168.37.143        PFCP     638    PFCP Session Establishment Request
+
+Frame 101: 638 bytes on wire (5104 bits), 638 bytes captured (5104 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:13.379390775 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:13.379390775 UTC
+    Epoch Arrival Time: 1763464693.379390775
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.020341636 seconds]
+    [Time delta from previous displayed frame: 0.276320706 seconds]
+    [Time since reference or first frame: 20.494405487 seconds]
+    Frame Number: 101
+    Frame Length: 638 bytes (5104 bits)
+    Capture Length: 638 bytes (5104 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_7c:92:76 (00:0c:29:7c:92:76), Dst: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+    Destination: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+Internet Protocol Version 4, Src: 192.168.37.140, Dst: 192.168.37.143
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 624
+    Identification: 0x55ee (21998)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x1623 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.140
+    Destination Address: 192.168.37.143
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 604
+    Checksum: 0x288d [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 11]
+    [Timestamps]
+        [Time since first frame: 12.102714111 seconds]
+        [Time since previous frame: 0.276320706 seconds]
+    UDP payload (596 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x21, SEID (S)
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...1 = SEID (S): True
+    Message Type: PFCP Session Establishment Request (50)
+    Length: 592
+    SEID: 0x0000000000000000
+    Sequence Number: 622
+    Spare: 0
+    Node ID : IPv4 address: 192.168.37.140
+        IE Type: Node ID (60)
+        IE Length: 5
+        0000 .... = Spare: 0
+        .... 0000 = Address Type: IPv4 address (0)
+        IPv4: 192.168.37.140
+    F-SEID : SEID: 0x000000000000026f, IPv4 192.168.37.140
+        IE Type: F-SEID (57)
+        IE Length: 13
+        0... .... = Spare: 0
+        .0.. .... = Spare: 0
+        ..0. .... = Spare: 0
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Spare: 0
+        .... ..1. = V4 (IPv4): Present
+        .... ...0 = V6 (IPv6): Not Present
+        SEID: 0x000000000000026f
+        IPv4 address: 192.168.37.140
+    Create PDR : [Grouped IE]: PDR ID: 1
+        IE Type: Create PDR (1)
+        IE Length: 74
+        PDR ID : 1
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 1
+        Precedence : 65535
+            IE Type: Precedence (29)
+            IE Length: 4
+            Precedence: 65535
+        PDI : [Grouped IE]
+            IE Type: PDI (2)
+            IE Length: 32
+            Source Interface : Core
+                IE Type: Source Interface (20)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0001 = Source Interface: Core (1)
+            Network Instance : internet
+                IE Type: Network Instance (22)
+                IE Length: 9
+                Network Instance: internet
+            UE IP Address : 
+                IE Type: UE IP Address (93)
+                IE Length: 5
+                0... .... = Spare: 0
+                .0.. .... = IPV6PL: Source IP address
+                ..0. .... = CHV6: Source IP address
+                ...0 .... = CHV4: Source IP address
+                .... 0... = IPv6D: Source IP address
+                .... .1.. = S/D: Destination IP address
+                .... ..1. = V4 (IPv4): Present
+                .... ...0 = V6 (IPv6): Not Present
+                IPv4 address: 10.45.0.25
+            3GPP Interface Type : N6: 
+                IE Type: 3GPP Interface Type (160)
+                IE Length: 1
+                0001 .... = Spare: 1
+                ..01 0001 = 3GPP Interface Type: N6 (17)
+        FAR ID : Dynamic by CP 1
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1
+        URR ID : Dynamic by CP 1
+            IE Type: URR ID (81)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1
+        QER ID : Dynamic by CP 1
+            IE Type: QER ID (109)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1
+    Create PDR : [Grouped IE]: PDR ID: 2
+        IE Type: Create PDR (1)
+        IE Length: 73
+        PDR ID : 2
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 2
+        Precedence : 65535
+            IE Type: Precedence (29)
+            IE Length: 4
+            Precedence: 65535
+        PDI : [Grouped IE]
+            IE Type: PDI (2)
+            IE Length: 34
+            Source Interface : Access
+                IE Type: Source Interface (20)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0000 = Source Interface: Access (0)
+            F-TEID : 
+                IE Type: F-TEID (21)
+                IE Length: 2
+                0000 .... = Spare: 0
+                .... 1... = CHID (CHOOSE_ID): True
+                .... .1.. = CH (CHOOSE): True
+                .... ..1. = V6 (IPv6): Present
+                .... ...1 = V4 (IPv4): Present
+                Choose Id: 05
+            Network Instance : internet
+                IE Type: Network Instance (22)
+                IE Length: 9
+                Network Instance: internet
+            QFI : 
+                IE Type: QFI (124)
+                IE Length: 1
+                00.. .... = Spare: 0
+                ..00 0001 = QFI: 0x01
+            3GPP Interface Type : N3 3GPP Access: 
+                IE Type: 3GPP Interface Type (160)
+                IE Length: 1
+                0000 .... = Spare: 0
+                ..00 1011 = 3GPP Interface Type: N3 3GPP Access (11)
+        Outer Header Removal : GTP-U/UDP/IPv4
+            IE Type: Outer Header Removal (95)
+            IE Length: 1
+            Outer Header Removal Description: GTP-U/UDP/IPv4 (0)
+        FAR ID : Dynamic by CP 2
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0010 = FAR ID: 2
+        QER ID : Dynamic by CP 1
+            IE Type: QER ID (109)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1
+    Create PDR : [Grouped IE]: PDR ID: 3
+        IE Type: Create PDR (1)
+        IE Length: 41
+        PDR ID : 3
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 3
+        Precedence : 255
+            IE Type: Precedence (29)
+            IE Length: 4
+            Precedence: 255
+        PDI : [Grouped IE]
+            IE Type: PDI (2)
+            IE Length: 10
+            Source Interface : CP-function
+                IE Type: Source Interface (20)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0011 = Source Interface: CP-function (3)
+            F-TEID : 
+                IE Type: F-TEID (21)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0... = CHID (CHOOSE_ID): False
+                .... .1.. = CH (CHOOSE): True
+                .... ..1. = V6 (IPv6): Present
+                .... ...1 = V4 (IPv4): Present
+        Outer Header Removal : GTP-U/UDP/IPv4
+            IE Type: Outer Header Removal (95)
+            IE Length: 1
+            Outer Header Removal Description: GTP-U/UDP/IPv4 (0)
+        FAR ID : Dynamic by CP 1
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1
+    Create PDR : [Grouped IE]: PDR ID: 4
+        IE Type: Create PDR (1)
+        IE Length: 110
+        PDR ID : 4
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 4
+        Precedence : 255
+            IE Type: Precedence (29)
+            IE Length: 4
+            Precedence: 255
+        PDI : [Grouped IE]
+            IE Type: PDI (2)
+            IE Length: 79
+            Source Interface : Access
+                IE Type: Source Interface (20)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0000 = Source Interface: Access (0)
+            F-TEID : 
+                IE Type: F-TEID (21)
+                IE Length: 2
+                0000 .... = Spare: 0
+                .... 1... = CHID (CHOOSE_ID): True
+                .... .1.. = CH (CHOOSE): True
+                .... ..1. = V6 (IPv6): Present
+                .... ...1 = V4 (IPv4): Present
+                Choose Id: 05
+            Network Instance : internet
+                IE Type: Network Instance (22)
+                IE Length: 9
+                Network Instance: internet
+            SDF Filter : 
+                IE Type: SDF Filter (23)
+                IE Length: 46
+                0000 .... = Spare: 0
+                ...0 .... = BID (Bidirectional SDF Filter): False
+                .... 0... = FL (Flow Label): False
+                .... .0.. = SPI (Security Parameter Index): False
+                .... ..0. = TTC (ToS Traffic Class): False
+                .... ...1 = FD (Flow Description): True
+                Spare: 0
+                Length of Flow Description: 42
+                Flow Description: permit out 58 from ff02::2/128 to assigned
+            3GPP Interface Type : N3 3GPP Access: 
+                IE Type: 3GPP Interface Type (160)
+                IE Length: 1
+                0000 .... = Spare: 0
+                ..00 1011 = 3GPP Interface Type: N3 3GPP Access (11)
+        Outer Header Removal : GTP-U/UDP/IPv4
+            IE Type: Outer Header Removal (95)
+            IE Length: 1
+            Outer Header Removal Description: GTP-U/UDP/IPv4 (0)
+        FAR ID : Dynamic by CP 3
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0011 = FAR ID: 3
+    Create FAR : [Grouped IE]: FAR ID: Dynamic by CP 1
+        IE Type: Create FAR (3)
+        IE Length: 19
+        FAR ID : Dynamic by CP 1
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1
+        Apply Action : 
+            IE Type: Apply Action (44)
+            IE Length: 2
+            0... .... = DFRT (Duplicate for Redundant Transmission): False
+            .0.. .... = IPMD (IP Multicast Deny): False
+            ..0. .... = IPMA (IP Multicast Accept): False
+            ...0 .... = DUPL (Duplicate): False
+            .... 1... = NOCP (Notify the CP function): True
+            .... .1.. = BUFF (Buffer): True
+            .... ..0. = FORW (Forward): False
+            .... ...0 = DROP (Drop): False
+            000. .... = Spare: 0
+            ...0 .... = MBSU (Forward and replicate MBS data using Unicast transport): False
+            .... 0... = FSSM (Forward packets to lower layer SSM): False
+            .... .0.. = DDPN (Discared Downlink Packet Notification): False
+            .... ..0. = BDPN (Buffered Downlink Packet Notification): False
+            .... ...0 = EDRT (Eliminate Duplicate Packets for Redundant Transmission): False
+        BAR ID : 1
+            IE Type: BAR ID (88)
+            IE Length: 1
+            BAR ID: 1
+    Create FAR : [Grouped IE]: FAR ID: Dynamic by CP 2
+        IE Type: Create FAR (3)
+        IE Length: 41
+        FAR ID : Dynamic by CP 2
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0010 = FAR ID: 2
+        Apply Action : 
+            IE Type: Apply Action (44)
+            IE Length: 2
+            0... .... = DFRT (Duplicate for Redundant Transmission): False
+            .0.. .... = IPMD (IP Multicast Deny): False
+            ..0. .... = IPMA (IP Multicast Accept): False
+            ...0 .... = DUPL (Duplicate): False
+            .... 0... = NOCP (Notify the CP function): False
+            .... .0.. = BUFF (Buffer): False
+            .... ..1. = FORW (Forward): True
+            .... ...0 = DROP (Drop): False
+            000. .... = Spare: 0
+            ...0 .... = MBSU (Forward and replicate MBS data using Unicast transport): False
+            .... 0... = FSSM (Forward packets to lower layer SSM): False
+            .... .0.. = DDPN (Discared Downlink Packet Notification): False
+            .... ..0. = BDPN (Buffered Downlink Packet Notification): False
+            .... ...0 = EDRT (Eliminate Duplicate Packets for Redundant Transmission): False
+        Forwarding Parameters : [Grouped IE]
+            IE Type: Forwarding Parameters (4)
+            IE Length: 23
+            Destination Interface : Core
+                IE Type: Destination Interface (42)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0001 = Interface: Core (1)
+            Network Instance : internet
+                IE Type: Network Instance (22)
+                IE Length: 9
+                Network Instance: internet
+            3GPP Interface Type : N6: 
+                IE Type: 3GPP Interface Type (160)
+                IE Length: 1
+                0001 .... = Spare: 1
+                ..01 0001 = 3GPP Interface Type: N6 (17)
+    Create FAR : [Grouped IE]: FAR ID: Dynamic by CP 3
+        IE Type: Create FAR (3)
+        IE Length: 37
+        FAR ID : Dynamic by CP 3
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0011 = FAR ID: 3
+        Apply Action : 
+            IE Type: Apply Action (44)
+            IE Length: 2
+            0... .... = DFRT (Duplicate for Redundant Transmission): False
+            .0.. .... = IPMD (IP Multicast Deny): False
+            ..0. .... = IPMA (IP Multicast Accept): False
+            ...0 .... = DUPL (Duplicate): False
+            .... 0... = NOCP (Notify the CP function): False
+            .... .0.. = BUFF (Buffer): False
+            .... ..1. = FORW (Forward): True
+            .... ...0 = DROP (Drop): False
+            000. .... = Spare: 0
+            ...0 .... = MBSU (Forward and replicate MBS data using Unicast transport): False
+            .... 0... = FSSM (Forward packets to lower layer SSM): False
+            .... .0.. = DDPN (Discared Downlink Packet Notification): False
+            .... ..0. = BDPN (Buffered Downlink Packet Notification): False
+            .... ...0 = EDRT (Eliminate Duplicate Packets for Redundant Transmission): False
+        Forwarding Parameters : [Grouped IE]
+            IE Type: Forwarding Parameters (4)
+            IE Length: 19
+            Destination Interface : CP- Function
+                IE Type: Destination Interface (42)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0011 = Interface: CP- Function (3)
+            Outer Header Creation : 
+                IE Type: Outer Header Creation (84)
+                IE Length: 10
+                0... .... .... .... = S-TAG: False
+                .0.. .... .... .... = C-TAG: False
+                ..0. .... .... .... = IPv6: False
+                ...0 .... .... .... = IPv4: False
+                .... 0... .... .... = UDP/IPv6: False
+                .... .0.. .... .... = UDP/IPv4: False
+                .... ..0. .... .... = GTP-U/UDP/IPv6: False
+                .... ...1 .... .... = GTP-U/UDP/IPv4: True
+                .... .... 0000 0... = Spare: 0
+                .... .... .... .0.. = Low Layer SSM and C-TEID: False
+                .... .... .... ..0. = N6 Indication: False
+                .... .... .... ...0 = N19 Indication: False
+                TEID: 0x00000018
+                IPv4 Address: 192.168.37.140
+    Create URR : [Grouped IE]: URR ID: Dynamic by CP 1
+        IE Type: Create URR (6)
+        IE Length: 33
+        URR ID : Dynamic by CP 1
+            IE Type: URR ID (81)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1
+        Measurement Method : 
+            IE Type: Measurement Method (62)
+            IE Length: 1
+            0000 0... = Spare: 0
+            .... .0.. = EVENT (Event): False
+            .... ..1. = VOLUM (Volume): True
+            .... ...0 = DURAT (Duration): False
+        Reporting Triggers : 
+            IE Type: Reporting Triggers (37)
+            IE Length: 3
+            0... .... = LIUSA (Linked Usage Reporting): False
+            .0.. .... = DROTH (Dropped DL Traffic Threshold): False
+            ..0. .... = STOPT (Stop of Traffic): False
+            ...0 .... = START (Start of Traffic): False
+            .... 0... = QUHTI (Quota Holding Time): False
+            .... .0.. = TIMTH (Time Threshold): False
+            .... ..1. = VOLTH (Volume Threshold): True
+            .... ...0 = PERIO (Periodic Reporting): False
+            0... .... = QUVTI (Quota Validity Time): False
+            .0.. .... = IPMJL (IP Multicast Join/Leave): False
+            ..0. .... = EVEQU (Event Quota): False
+            ...0 .... = EVETH (Event Threshold): False
+            .... 0... = MACAR (MAC Addresses Reporting): False
+            .... .0.. = ENVCL (Envelope Closure): False
+            .... ..0. = TIMQU (Time Quota): False
+            .... ...0 = VOLQU (Volume Quota): False
+            0000 00.. = Spare: 0
+            .... ..0. = UPINT (User Plane Inactivity Timer): False
+            .... ...0 = REEMR (REport the End Marker Reception): False
+        Volume Threshold : 
+            IE Type: Volume Threshold (31)
+            IE Length: 9
+            0000 0... = Spare: 0
+            .... .0.. = DLVOL: False
+            .... ..0. = ULVOL: False
+            .... ...1 = TOVOL: True
+            Total Volume: 104857600
+    Create QER : [Grouped IE]: QER ID: Dynamic by CP 1
+        IE Type: Create QER (7)
+        IE Length: 32
+        QER ID : Dynamic by CP 1
+            IE Type: QER ID (109)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1
+        Gate Status : 
+            IE Type: Gate Status (25)
+            IE Length: 1
+            .... 00.. = UL Gate: OPEN (0)
+            .... ..00 = DL Gate: OPEN (0)
+        MBR : 
+            IE Type: MBR (26)
+            IE Length: 10
+            UL MBR: 1000000
+            DL MBR: 1000000
+        QFI : 
+            IE Type: QFI (124)
+            IE Length: 1
+            00.. .... = Spare: 0
+            ..00 0001 = QFI: 0x01
+    Create BAR : [Grouped IE]: BAR ID: 1
+        IE Type: Create BAR (85)
+        IE Length: 5
+        BAR ID : 1
+            IE Type: BAR ID (88)
+            IE Length: 1
+            BAR ID: 1
+    PDN Type : IPv4
+        IE Type: PDN Type (113)
+        IE Length: 1
+        .... .001 = PDN Type: IPv4 (1)
+    User ID : 
+        IE Type: User ID (141)
+        IE Length: 19
+        0... .... = Spare: 0
+        .0.. .... = PEIF: Not Present
+        ..0. .... = GPSIF: Not Present
+        ...0 .... = SUPIF: Not Present
+        .... 0... = NAIF: Not Present
+        .... .0.. = MSISDNF: Not Present
+        .... ..1. = IMEIF: Present
+        .... ...1 = IMSIF: Present
+        Length of IMSI: 8
+        IMSI: 999700000133266
+        [Association IMSI: 999700000133266]
+            Mobile Country Code (MCC): Private network (999)
+            Mobile Network Code (MNC): Unknown (700)
+        Length of IMEI: 8
+        IMEI: 4370816125816151
+    APN/DNN : internet
+        IE Type: APN/DNN (159)
+        IE Length: 9
+        APN/DNN: internet
+    S-NSSAI : 
+        IE Type: S-NSSAI (257)
+        IE Length: 4
+        SST: 01
+        SD: ffffff
+    [Response In: 102]
+
+No.     Time           Source                Destination           Protocol Length Info
+    102 20.495427257   192.168.37.143        192.168.37.140        PFCP     158    PFCP Session Establishment Response
+
+Frame 102: 158 bytes on wire (1264 bits), 158 bytes captured (1264 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:13.380412545 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:13.380412545 UTC
+    Epoch Arrival Time: 1763464693.380412545
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001021770 seconds]
+    [Time delta from previous displayed frame: 0.001021770 seconds]
+    [Time since reference or first frame: 20.495427257 seconds]
+    Frame Number: 102
+    Frame Length: 158 bytes (1264 bits)
+    Capture Length: 158 bytes (1264 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_c3:8d:38 (00:0c:29:c3:8d:38), Dst: VMware_7c:92:76 (00:0c:29:7c:92:76)
+    Destination: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+Internet Protocol Version 4, Src: 192.168.37.143, Dst: 192.168.37.140
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 144
+    Identification: 0xe01f (57375)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x8dd1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.143
+    Destination Address: 192.168.37.140
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 124
+    Checksum: 0x1b13 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 12]
+    [Timestamps]
+        [Time since first frame: 12.103735881 seconds]
+        [Time since previous frame: 0.001021770 seconds]
+    UDP payload (116 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x21, SEID (S)
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...1 = SEID (S): True
+    Message Type: PFCP Session Establishment Response (51)
+    Length: 112
+    SEID: 0x000000000000026f
+    Sequence Number: 622
+    Spare: 0
+    Node ID : IPv4 address: 192.168.37.143
+        IE Type: Node ID (60)
+        IE Length: 5
+        0000 .... = Spare: 0
+        .... 0000 = Address Type: IPv4 address (0)
+        IPv4: 192.168.37.143
+    Cause : Request accepted(success)
+        IE Type: Cause (19)
+        IE Length: 1
+        Cause: Request accepted(success) (1)
+    F-SEID : SEID: 0x00000000000009cc, IPv4 192.168.37.143
+        IE Type: F-SEID (57)
+        IE Length: 13
+        0... .... = Spare: 0
+        .0.. .... = Spare: 0
+        ..0. .... = Spare: 0
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Spare: 0
+        .... ..1. = V4 (IPv4): Present
+        .... ...0 = V6 (IPv6): Not Present
+        SEID: 0x00000000000009cc
+        IPv4 address: 192.168.37.143
+    Created PDR : [Grouped IE]: PDR ID: 2
+        IE Type: Created PDR (8)
+        IE Length: 19
+        PDR ID : 2
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 2
+        F-TEID : TEID: 0x0000ee69, IPv4 192.168.37.143
+            IE Type: F-TEID (21)
+            IE Length: 9
+            0000 .... = Spare: 0
+            .... 0... = CHID (CHOOSE_ID): False
+            .... .0.. = CH (CHOOSE): False
+            .... ..0. = V6 (IPv6): Not Present
+            .... ...1 = V4 (IPv4): Present
+            TEID: 0x0000ee69
+            IPv4 address: 192.168.37.143
+    Created PDR : [Grouped IE]: PDR ID: 3
+        IE Type: Created PDR (8)
+        IE Length: 19
+        PDR ID : 3
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 3
+        F-TEID : TEID: 0x0000971f, IPv4 192.168.37.143
+            IE Type: F-TEID (21)
+            IE Length: 9
+            0000 .... = Spare: 0
+            .... 0... = CHID (CHOOSE_ID): False
+            .... .0.. = CH (CHOOSE): False
+            .... ..0. = V6 (IPv6): Not Present
+            .... ...1 = V4 (IPv4): Present
+            TEID: 0x0000971f
+            IPv4 address: 192.168.37.143
+    Created PDR : [Grouped IE]: PDR ID: 4
+        IE Type: Created PDR (8)
+        IE Length: 19
+        PDR ID : 4
+            IE Type: PDR ID (56)
+            IE Length: 2
+            Rule ID: 4
+        F-TEID : TEID: 0x0000ee69, IPv4 192.168.37.143
+            IE Type: F-TEID (21)
+            IE Length: 9
+            0000 .... = Spare: 0
+            .... 0... = CHID (CHOOSE_ID): False
+            .... .0.. = CH (CHOOSE): False
+            .... ..0. = V6 (IPv6): Not Present
+            .... ...1 = V4 (IPv4): Present
+            TEID: 0x0000ee69
+            IPv4 address: 192.168.37.143
+    [Response To: 101]
+    [Response Time: 0.001021770 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+    106 20.505523284   192.168.37.140        192.168.37.143        PFCP     117    PFCP Session Modification Request
+
+Frame 106: 117 bytes on wire (936 bits), 117 bytes captured (936 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:13.390508572 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:13.390508572 UTC
+    Epoch Arrival Time: 1763464693.390508572
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.002091330 seconds]
+    [Time delta from previous displayed frame: 0.010096027 seconds]
+    [Time since reference or first frame: 20.505523284 seconds]
+    Frame Number: 106
+    Frame Length: 117 bytes (936 bits)
+    Capture Length: 117 bytes (936 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_7c:92:76 (00:0c:29:7c:92:76), Dst: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+    Destination: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+Internet Protocol Version 4, Src: 192.168.37.140, Dst: 192.168.37.143
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 103
+    Identification: 0x55f3 (22003)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x1827 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.140
+    Destination Address: 192.168.37.143
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 83
+    Checksum: 0x889a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 13]
+    [Timestamps]
+        [Time since first frame: 12.113831908 seconds]
+        [Time since previous frame: 0.010096027 seconds]
+    UDP payload (75 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x21, SEID (S)
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...1 = SEID (S): True
+    Message Type: PFCP Session Modification Request (52)
+    Length: 71
+    SEID: 0x00000000000009cc
+    Sequence Number: 623
+    Spare: 0
+    Update FAR : [Grouped IE]: FAR ID: Dynamic by CP 1
+        IE Type: Update FAR (10)
+        IE Length: 55
+        FAR ID : Dynamic by CP 1
+            IE Type: FAR ID (108)
+            IE Length: 4
+            0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP
+            .000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1
+        Apply Action : 
+            IE Type: Apply Action (44)
+            IE Length: 2
+            0... .... = DFRT (Duplicate for Redundant Transmission): False
+            .0.. .... = IPMD (IP Multicast Deny): False
+            ..0. .... = IPMA (IP Multicast Accept): False
+            ...0 .... = DUPL (Duplicate): False
+            .... 0... = NOCP (Notify the CP function): False
+            .... .0.. = BUFF (Buffer): False
+            .... ..1. = FORW (Forward): True
+            .... ...0 = DROP (Drop): False
+            000. .... = Spare: 0
+            ...0 .... = MBSU (Forward and replicate MBS data using Unicast transport): False
+            .... 0... = FSSM (Forward packets to lower layer SSM): False
+            .... .0.. = DDPN (Discared Downlink Packet Notification): False
+            .... ..0. = BDPN (Buffered Downlink Packet Notification): False
+            .... ...0 = EDRT (Eliminate Duplicate Packets for Redundant Transmission): False
+        Update Forwarding Parameters : [Grouped IE]
+            IE Type: Update Forwarding Parameters (11)
+            IE Length: 37
+            Destination Interface : Access
+                IE Type: Destination Interface (42)
+                IE Length: 1
+                0000 .... = Spare: 0
+                .... 0000 = Interface: Access (0)
+            Network Instance : internet
+                IE Type: Network Instance (22)
+                IE Length: 9
+                Network Instance: internet
+            Outer Header Creation : 
+                IE Type: Outer Header Creation (84)
+                IE Length: 10
+                0... .... .... .... = S-TAG: False
+                .0.. .... .... .... = C-TAG: False
+                ..0. .... .... .... = IPv6: False
+                ...0 .... .... .... = IPv4: False
+                .... 0... .... .... = UDP/IPv6: False
+                .... .0.. .... .... = UDP/IPv4: False
+                .... ..0. .... .... = GTP-U/UDP/IPv6: False
+                .... ...1 .... .... = GTP-U/UDP/IPv4: True
+                .... .... 0000 0... = Spare: 0
+                .... .... .... .0.. = Low Layer SSM and C-TEID: False
+                .... .... .... ..0. = N6 Indication: False
+                .... .... .... ...0 = N19 Indication: False
+                TEID: 0x00000001
+                IPv4 Address: 192.168.37.139
+            3GPP Interface Type : N3 3GPP Access: 
+                IE Type: 3GPP Interface Type (160)
+                IE Length: 1
+                0000 .... = Spare: 0
+                ..00 1011 = 3GPP Interface Type: N3 3GPP Access (11)
+    [Response In: 107]
+
+No.     Time           Source                Destination           Protocol Length Info
+    107 20.506226366   192.168.37.143        192.168.37.140        PFCP     63     PFCP Session Modification Response
+
+Frame 107: 63 bytes on wire (504 bits), 63 bytes captured (504 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:13.391211654 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:13.391211654 UTC
+    Epoch Arrival Time: 1763464693.391211654
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000703082 seconds]
+    [Time delta from previous displayed frame: 0.000703082 seconds]
+    [Time since reference or first frame: 20.506226366 seconds]
+    Frame Number: 107
+    Frame Length: 63 bytes (504 bits)
+    Capture Length: 63 bytes (504 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_c3:8d:38 (00:0c:29:c3:8d:38), Dst: VMware_7c:92:76 (00:0c:29:7c:92:76)
+    Destination: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+Internet Protocol Version 4, Src: 192.168.37.143, Dst: 192.168.37.140
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 49
+    Identification: 0xe023 (57379)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x8e2c [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.143
+    Destination Address: 192.168.37.140
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 29
+    Checksum: 0x5ab2 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 14]
+    [Timestamps]
+        [Time since first frame: 12.114534990 seconds]
+        [Time since previous frame: 0.000703082 seconds]
+    UDP payload (21 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x21, SEID (S)
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...1 = SEID (S): True
+    Message Type: PFCP Session Modification Response (53)
+    Length: 17
+    SEID: 0x000000000000026f
+    Sequence Number: 623
+    Spare: 0
+    Cause : Request accepted(success)
+        IE Type: Cause (19)
+        IE Length: 1
+        Cause: Request accepted(success) (1)
+    [Response To: 106]
+    [Response Time: 0.000703082 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+    166 30.403222350   192.168.37.140        192.168.37.143        PFCP     60     PFCP Heartbeat Request
+
+Frame 166: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:23.288207638 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:23.288207638 UTC
+    Epoch Arrival Time: 1763464703.288207638
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.068405789 seconds]
+    [Time delta from previous displayed frame: 0.068405789 seconds]
+    [Time since reference or first frame: 30.403222350 seconds]
+    Frame Number: 166
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_7c:92:76 (00:0c:29:7c:92:76), Dst: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+    Destination: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+    Padding: 0000
+Internet Protocol Version 4, Src: 192.168.37.140, Dst: 192.168.37.143
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 44
+    Identification: 0x5d94 (23956)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x10c1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.140
+    Destination Address: 192.168.37.143
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 24
+    Checksum: 0xb402 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 15]
+    [Timestamps]
+        [Time since first frame: 22.011530974 seconds]
+        [Time since previous frame: 9.896995984 seconds]
+    UDP payload (16 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x20
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...0 = SEID (S): False
+    Message Type: PFCP Heartbeat Request (1)
+    Length: 12
+    Sequence Number: 624
+    Spare: 0
+    Recovery Time Stamp : Nov 18, 2025 09:39:22.000000000 UTC
+        IE Type: Recovery Time Stamp (96)
+        IE Length: 4
+        Recovery Time Stamp: Nov 18, 2025 09:39:22.000000000 UTC
+    [Response In: 167]
+
+No.     Time           Source                Destination           Protocol Length Info
+    167 30.403791453   192.168.37.143        192.168.37.140        PFCP     60     PFCP Heartbeat Response
+
+Frame 167: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 18, 2025 19:18:23.288776741 Malay Peninsula Standard Time
+    UTC Arrival Time: Nov 18, 2025 11:18:23.288776741 UTC
+    Epoch Arrival Time: 1763464703.288776741
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000569103 seconds]
+    [Time delta from previous displayed frame: 0.000569103 seconds]
+    [Time since reference or first frame: 30.403791453 seconds]
+    Frame Number: 167
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:pfcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: VMware_c3:8d:38 (00:0c:29:c3:8d:38), Dst: VMware_7c:92:76 (00:0c:29:7c:92:76)
+    Destination: VMware_7c:92:76 (00:0c:29:7c:92:76)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_c3:8d:38 (00:0c:29:c3:8d:38)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+    Padding: 0000
+Internet Protocol Version 4, Src: 192.168.37.143, Dst: 192.168.37.140
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 44
+    Identification: 0xfa76 (64118)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x73de [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.37.143
+    Destination Address: 192.168.37.140
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 8805, Dst Port: 8805
+    Source Port: 8805
+    Destination Port: 8805
+    Length: 24
+    Checksum: 0xa919 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 16]
+    [Timestamps]
+        [Time since first frame: 22.012100077 seconds]
+        [Time since previous frame: 0.000569103 seconds]
+    UDP payload (16 bytes)
+Packet Forwarding Control Protocol
+    Flags: 0x20
+        001. .... = Version: 1
+        ...0 .... = Spare: 0
+        .... 0... = Spare: 0
+        .... .0.. = Follow On (FO): False
+        .... ..0. = Message Priority (MP): False
+        .... ...0 = SEID (S): False
+    Message Type: PFCP Heartbeat Response (2)
+    Length: 12
+    Sequence Number: 624
+    Spare: 0
+    Recovery Time Stamp : Nov 18, 2025 10:25:54.000000000 UTC
+        IE Type: Recovery Time Stamp (96)
+        IE Length: 4
+        Recovery Time Stamp: Nov 18, 2025 10:25:54.000000000 UTC
+    [Response To: 166]
+    [Response Time: 0.000569103 seconds]

